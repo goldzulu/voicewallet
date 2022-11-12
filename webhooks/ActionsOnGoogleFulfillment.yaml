@@ -1,0 +1,5 @@
+handlers:
+- name: greeting
+- name: checkbalance
+inlineCloudFunction:
+  executeFunction: ActionsOnGoogleFulfillment

@@ -1,0 +1,24 @@
+onEnter:
+  staticPrompt:
+    candidates:
+    - promptResponse:
+        firstSimple:
+          variants:
+          - speech: How can I help you?
+        suggestions:
+        - title: "Check my balance"
+        - title: "Create new wallet"
+intentEvents:
+- handler:
+    webhookHandler: checkbalance
+  intent: "checkbalance"
+  transitionToScene: actions.scene.END_CONVERSATION
+- handler:
+    staticPrompt:
+      candidates:
+      - promptResponse:
+          firstSimple:
+            variants:
+            - speech: "I'm sorry, I am unable to create a wallet at the moment."
+  intent: "createwallet"
+  transitionToScene: actions.scene.END_CONVERSATION

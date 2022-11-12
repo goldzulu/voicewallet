@@ -1,0 +1,16 @@
+{
+    "name": "voice-wallet",
+    "version": "0.0.0",
+    "private": true,
+    "description": "A Friendly AI De-Fi Voice Wallet.",
+    "main": "index.js",
+    "engines": {
+        "node": "16"
+    },
+    "dependencies": {
+        "@assistant/conversation": "^3.0.0",
+        "firebase-admin": "~8.0.0",
+        "firebase-functions": "^3.1.0",
+        "node-fetch": "^2.6.7"
+    }
+}
